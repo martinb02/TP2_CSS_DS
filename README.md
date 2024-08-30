@@ -30,7 +30,7 @@ Para ejecutar este proyecto, necesitas tener un navegador web moderno que soport
   
   cd tu-repositorio
 
-3, Abre el archivo index.html en tu navegador preferido:
+3. Abre el archivo index.html en tu navegador preferido:
 
   open index.html
 
