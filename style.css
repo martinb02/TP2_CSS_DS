@@ -1,0 +1,144 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(70, 70, 70);
+    padding: 5px;
+}
+
+.blockquote{
+    font-size: 20px;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    color: white;
+}
+h3{
+    border-bottom: 1px solid;
+    padding: 5px;
+    margin: 5px;
+
+}
+section{
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 1rem;
+}
+.parrafo1{
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.parrafo2{
+    background-color: rgb(231, 231, 231);
+    border-left: 4px solid gray;
+    color: gray;
+    padding: 5px;
+}
+
+.caja1{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px;
+}
+
+
+.caja2{
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px;
+
+    background-color: bisque;
+}
+
+.relativo{
+    background-color: aquamarine;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    top: 0px;
+    left: 5px;
+    right: 5px;
+    z-index: 10;
+
+}
+
+.absoluto{
+    background-color: cadetblue;
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    left: 50vw;
+    top: 30rem;
+    right: 5px;
+    z-index: 15;
+}
+
+
+@media (max-width:768px ) {
+    body{
+        background-color:darksalmon;
+        
+    }
+    section{
+        padding: 4px;
+        margin: 10px;
+    }
+    h1{
+        font-size: 1rem;
+    }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.grid-item{
+    background-color:hotpink;
+    border-radius: 1rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.animacion{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    transition: 2s;
+}
+
+.animacion:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+
+.mover{
+    border-radius: 100%;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    animation: mover 2s infinite;
+}
+
+@keyframes mover{
+    0%{
+        transform:translateX(0px)
+    }
+    50%{
+        transform:translateX(100px)
+    }
+    100%{
+        transform:translateX(0px)
+    }
+}
